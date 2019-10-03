@@ -27,6 +27,7 @@
         通知台股？
       </h1>
         
+        <button onclick="oAuth2();"> 連結到 LineNotify 按鈕 </button>
   </section>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -38,6 +39,16 @@
 
     gtag('config', 'UA-90090987-2');
   </script>
-    
+  <script>
+      function oAuth2() {
+          var URL = `https://notify-bot.line.me/oauth/authorize?
+            response_type=code
+            &client_id=tmTkREsah18EgTBAgj67Cv
+            &redirect_uri=idphobia.github.io
+            &scope=notify
+            &state=NO_STATE`;
+          window.location.href = URL;
+      }
+  </script>    
   </body>
 </html>
