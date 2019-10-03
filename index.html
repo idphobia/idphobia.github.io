@@ -36,14 +36,12 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-90090987-2');
   </script>
   <script>
-      const redUrl = 'https://idphobia.github.io/index.html';
+      const redUrl = 'https:\/\/idphobia.github.io';
       function oAuth2() {
-          var URL = `https://notify-bot.line.me/oauth/authorize
- ?response_type=code&client_id=tmTkREsah18EgTBAgj67Cv&redirect_uri=${encodeURIComponent(redUrl)}&scope=notify&state=NO_STATE`;
+          var URL = `https://notify-bot.line.me/oauth/authorize?response_type=code&client_id=tmTkREsah18EgTBAgj67Cv&redirect_uri=${(redUrl)}&scope=notify&state=NO_STATE`;
           window.location.href = URL;
       }
   </script>    
