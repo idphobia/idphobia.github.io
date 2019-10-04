@@ -8,7 +8,7 @@
     <meta name="HandheldFriendly" content="true"/> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>台股事件</title>
+    <title></title>
     <meta name="description" content="" />
     <meta name="keywords" content="">
     <meta name="robots" content=”index,follow”>
@@ -24,10 +24,8 @@
   <section class="section">
     <div class="container">
       <h1 class="title">
-        通知台股？
       </h1>
         
-        <button onclick="oAuth2();"> 連結到 LineNotify 按鈕 </button>
   </section>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -38,12 +36,5 @@
     gtag('js', new Date());
     gtag('config', 'UA-90090987-2');
   </script>
-  <script>
-      const redUrl = 'https:\/\/idphobia.github.io';
-      function oAuth2() {
-          var URL = `https://notify-bot.line.me/oauth/authorize?response_type=code&client_id=tmTkREsah18EgTBAgj67Cv&redirect_uri=${(redUrl)}&scope=notify&state=NO_STATE`;
-          window.location.href = URL;
-      }
-  </script>    
   </body>
 </html>
